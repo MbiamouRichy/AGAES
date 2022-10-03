@@ -1,0 +1,419 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0a53be;
+    line-height: 25px;
+    font-size: 16px;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    color: rgb(119, 119, 119);
+}
+
+/*==================== header css ========================*/
+
+a{  outline: none;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+}
+.a-hd:hover{
+    text-decoration: none;
+}
+.hd-top{
+    height: 42px;
+    background-color: black;
+}
+.btnparticulier{
+    padding: 12px;
+    transition: all 0.9s ease-in-out;
+    text-decoration: none;
+}
+.btnparticulier:hover{
+    background: linear-gradient(90deg, rgb(0, 174, 224) 0%, rgb(0, 254, 220) 100%);
+    text-decoration: none;
+}
+.fa-cross{
+    transform: rotate(45deg);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 0px;
+}
+.search_input{
+    background-image: linear-gradient(90deg, rgb(0, 174, 224) 0%, rgb(0, 254, 220) 100%);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.inp{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+}
+form{
+    background-color: transparent;
+    transition: all 0.5s;
+}
+form:hover{
+    background-color: white;
+}
+.time{
+    color: transparent;
+    transition: all 0.5s;
+}
+form:hover .time{
+    color: black;
+}
+input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+form:hover input::placeholder{
+    color: black;
+}
+
+.home_banner_area .banner_inner .banner_content h2{
+    margin-top: 0px;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    line-height: 54px;
+}
+.home_banner_area{
+    z-index: 1;
+    min-height: 780px;
+    display: flex;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../image/LIVR1.png) center center no-repeat scroll;
+}
+.home_banner_area .banner_inner {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+}
+.home_banner_area .banner_inner {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+}
+.home_banner_area .banner_inner .banner_content p {
+    max-width: 520px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 25px 0px 45px;
+}
+.feature_area {
+    margin-top: -37em;
+}
+.home_banner_area .search_course_wrap .form-control {
+    height: 50px;
+    background: transparent;
+    padding: 0px 20px;
+    border-radius: 0px;
+    display: inline-block;
+    border: 0px;
+}
+.home_banner_area .search_course_wrap input {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+.home_banner_area .search_course_wrap .search_course_btn {
+    background: linear-gradient(to right, rgb(0, 174, 224) 0%, rgb(0, 254, 220) 51%, rgb(0, 174, 224) 100%) 0% 0% / 200%;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 60px;
+    padding: 10px 35px;
+    border: 0px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.btn.disabled, .btn:disabled {
+    opacity: 0.65;
+}
+.home_banner_area .search_course_wrap .form_box {
+    background: rgba(255, 255, 255, 0.15);
+    max-width: 450px;
+    padding: 10px 0px;
+}
+.home_banner_area .banner_inner .container {
+    vertical-align: middle;
+    align-self: center;
+}
+.home_banner_area .search_course_wrap input::placeholder{
+    color: white;
+}
+/* navbar*/
+.header_area .navbar {
+    background: transparent;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+}
+.header_area .dropdown {
+    position: relative;
+}
+.header_area .dropdown .dropdown-menu {
+    position: absolute;
+    top: 120%;
+    left: 0px;
+    min-width: 226px;
+    text-align: left;
+    opacity: 0;
+    transition: all 0.3s ease-in 0s;
+    visibility: hidden;
+    display: block;
+    border: none;
+    padding: 0px;
+    border-radius: 0px;
+}
+header .dropdown:hover  .dropdown-menu {
+    display: block;
+    padding-left: 0px;
+    border: none;
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+.header_area .navbar .nav .nav-item .nav-link {
+    font: Montserrat, sans-serif;
+    text-transform: uppercase;
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+    font-weight: 500;
+}
+.header_area .navbar .nav .nav-item:hover .dropdown-toggle,
+.header_area .navbar .nav .nav-item.active .nav-link {
+    color: rgb(0, 174, 224);
+}
+.header_area .navbar .nav .nav-item.submenu ul .nav-item {
+    display: block;
+    float: none;
+    margin-right: 0px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    margin-left: 0px;
+    transition: all 0.4s linear 0s;
+}
+.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
+    background: rgb(0, 174, 224);
+    color: rgb(255, 255, 255);
+}
+/* corps du document*/
+/* block 1 */
+.section_gap {
+    background: linear-gradient(90deg, rgb(0, 174, 224) 0%, rgb(0, 254, 220) 100%)
+}
+.single_feature:nth-child(2) {
+    margin-bottom: 30px;
+}
+.home_banner_area .banner_inner .banner_content p {
+        max-width: 520px;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 25px 0px 45px;
+        color: white;
+}
+.single_feature .icon {
+    margin-right: 20px;
+}
+.gradient-bg3, .single_feature:nth-child(2), .single_course .course_content .course_meta .price.df_color2 {
+    background: linear-gradient(90deg, rgb(115, 73, 204) 0%, rgb(225, 99, 228) 100%);
+}
+.single_feature:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.gradient-bg2, .single_feature:nth-child(1), .single_course .course_content .course_meta .price.df_color1 {
+    background: linear-gradient(90deg, rgb(233, 64, 134) 0%, rgb(229, 146, 90) 100%);
+}
+.single_feature {
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+}
+.clockdiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.clock_sec {
+    color: rgb(255, 255, 255);
+}
+.clock_sec h1 {
+        font-size: 42px;
+        color: rgb(255, 255, 255);
+}
+h1 {
+    font-size: 36px;
+}
+.clock_sec p {
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+
+.clock_sec p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.clock_sec .clockinner {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px 20px;
+    margin-right: 15px;
+    text-align: center;
+    border: 1px solid rgb(102, 233, 235);
+    border-radius: 5px;
+    margin-top: 65px;
+}
+.clock_sec .clockinner h1 {
+    font-size: 36px;
+    display: inline-block;
+}
+/* block 2 */
+.bg {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.vc{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.mg{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.single_testimonial .testimonial_head {
+    text-align: center;
+}
+.single_testimonial .testimonial_head img {
+    margin: 0px auto 40px;
+    width: auto;
+}
+.single_testimonial .testimonial_head h2 {
+    margin-bottom: 10px
+}
+.single_testimonial .testimonial_head .review i.fas {
+    color: rgb(255, 192, 0);
+}
+.single_testimonial .testimonial_content {
+    margin-top: 30px;
+}
+.single_testimonial .testimonial_content p {
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+.section_gap {
+    padding: 120px 0px;
+}
+/* pied de page */
+.footer-area .single-footer-widget h4 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 35px;
+}
+.footer-area {
+    background: rgb(0, 0, 0);
+}
+.footer-area .single-footer-widget ul {
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    padding-left: 0px;
+}
+.footer-area .single-footer-widget li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.footer-area .single-footer-widget ul li a {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(119, 119, 119);
+    transition: all 0.3s ease 0s;
+}
+.footer-area .single-footer-widget ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+.footer-area .single-footer-widget h4 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 35px;
+}
+.footer-area .single-footer-widget .form-wrap {
+    margin-top: 25px;
+}
+.form-inline:hover{
+    background: transparent;
+}
+.footer-area .single-footer-widget input {
+    height: 40px;
+    border: none;
+    font-weight: 300;
+    background: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    font-size: 14px;
+    padding: 10px;
+    width: 80% !important;
+}
+.footer-area .single-footer-widget .click-btn {
+    background: linear-gradient(to right, rgb(0, 174, 224) 0%, rgb(0, 254, 220) 51%, rgb(0, 174, 224) 100%) 0% 0% / 200%;
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    padding: 8px 16px;
+    margin-left: -60px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    border: 0px;
+    transition: all 0.3s ease 0s;
+}
+.footer-area .single-footer-widget .click-btn:hover {
+    background-position: right center;
+}
+.info {
+    background: rgb(56, 164, 255);
+}
+.footer-area .footer-bottom {
+    margin-top: 50px;
+}
+.footer-area .footer-bottom a {
+    color: rgb(0, 174, 224);
+}
+.footer-area .footer-bottom .footer-social {
+    text-align: right;
+}
+.footer-area .footer-bottom .footer-social a {
+    background: rgb(17, 17, 17);
+    width: 40px;
+    display: inline-table;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    transition: all 0.3s ease 0s;
+}
+.footer-area .footer-bottom .footer-social a:hover {
+    background: linear-gradient(90deg, rgb(0, 174, 224) 0%, rgb(0, 254, 220) 100%);
+}
+.footer-area .footer-bottom .footer-social a i {
+    color: rgb(204, 204, 204);
+    transition: all 0.3s ease 0s;
+}
+
